@@ -4,6 +4,7 @@ pipeline {
     stages{
         stage('Build'){
             steps {
+                sh 'source /Users/hemanth.haridas/.bash_profile'
                 sh 'mvn clean package'
             }
             post {
